@@ -28,66 +28,17 @@
     <collision name='collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".46 .2 .1"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".46 .2 .1"/>
       </geometry>
       <material name="black"/>
     </visual>
-
-    <collision name='back_caster_collision'>
-      <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>0</mu>
-            <mu2>0</mu2>
-            <slip1>1.0</slip1>
-            <slip2>1.0</slip2>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-
-    <visual name='back_caster_visual'>
-      <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-    </visual>
-
-    <collision name='front_caster_collision'>
-      <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>0</mu>
-            <mu2>0</mu2>
-            <slip1>1.0</slip1>
-            <slip2>1.0</slip2>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-
-    <visual name='front_caster_visual'>
-      <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-    </visual>
-
   </link>
 
   <link name='left_wheel'>
@@ -106,14 +57,14 @@
     <collision name='left_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </collision>
 
     <visual name='left_wheel_visual'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </visual>
   </link>
@@ -143,14 +94,14 @@
     <collision name='right_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </collision>
 
     <visual name='right_wheel_visual'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </visual>
   </link>
