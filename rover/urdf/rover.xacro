@@ -41,7 +41,8 @@
     </visual>
   </link>
 
-  <link name='left_wheel'>
+  <!-- front wheels -->
+  <link name='front_left_wheel'>
     <pose>0 0 0.1 0 0 0</pose>
 
     <inertial>
@@ -54,14 +55,14 @@
       />
     </inertial>
 
-    <collision name='left_wheel_collision'>
+    <collision name='front_left_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </collision>
 
-    <visual name='left_wheel_visual'>
+    <visual name='front_left_wheel_visual'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.056" radius="0.084"/>
@@ -69,16 +70,16 @@
     </visual>
   </link>
 
-  <joint type="continuous" name="left_wheel_hinge">
-    <origin xyz="0 0.15 0" rpy="0 0 0"/>
-    <child link="left_wheel"/>
+  <joint type="continuous" name="front_left_wheel_hinge">
+    <origin xyz="0.15 0.15 0" rpy="0 0 0"/>
+    <child link="front_left_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
-  <link name='right_wheel'>
+  <link name='front_right_wheel'>
     <pose>0 0 0.1 0 0 0</pose>
 
     <inertial>
@@ -91,14 +92,14 @@
       />
     </inertial>
 
-    <collision name='right_wheel_collision'>
+    <collision name='front_right_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.056" radius="0.084"/>
       </geometry>
     </collision>
 
-    <visual name='right_wheel_visual'>
+    <visual name='front_right_wheel_visual'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.056" radius="0.084"/>
@@ -106,9 +107,9 @@
     </visual>
   </link>
 
-  <joint type="continuous" name="right_wheel_hinge">
-    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
-    <child link="right_wheel"/>
+  <joint type="continuous" name="front_right_wheel_hinge">
+    <origin xyz="0.15 -0.15 0" rpy="0 0 0"/>
+    <child link="front_right_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
