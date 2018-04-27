@@ -1,8 +1,8 @@
 local_costmap:
    global_frame: odom
    robot_base_frame: robot_footprint
-   update_frequency: 18.0
-   publish_frequency: 18.0
+   update_frequency: 15.0
+   publish_frequency: 15.0
    
    # resolution of the map in meters per cell
    resolution: 0.02 # see jackal_race.yaml
@@ -14,6 +14,6 @@ local_costmap:
    rolling_window: true
    
    # size of the local map
-   width: 7.0
-   height: 7.0
+   width: 6.0
+   height: 6.0
    

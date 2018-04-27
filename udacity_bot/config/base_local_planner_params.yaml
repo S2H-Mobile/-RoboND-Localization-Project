@@ -21,7 +21,7 @@ TrajectoryPlannerROS:
   
   ### Forward Simulation Parameters ###
   # amount of time to forward-simulate trajectories, in seconds
-  sim_time: 1.0
+  sim_time: 10.0
   
   # step sizes to take on a given trajectory
   sim_granularity: 0.025
@@ -30,12 +30,15 @@ TrajectoryPlannerROS:
   # number of samples to use when exploring velocity space
   vx_samples: 3
   vtheta_samples: 20
+
+  # controller frequency
+  controller_frequency: 15.0
   
   ## Trajectory Scoring Parameters ##
   # distances are expressed in meters
   meter_scoring: true
   
   # weights for scaling
-  pdist_scale: 0.6
-  gdist_scale: 0.8
+  pdist_scale: 0.8
+  gdist_scale: 0.6
   occdist_scale: 0.01
