@@ -12,9 +12,7 @@
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
 
-    <!-- Odometry model -->
-    <param name="odom_model_type" value="diff-corrected"/>
-
+    <!-- Filter -->
     <!-- Transform tolerance. See common questions in classroom material. -->
     <param name="transform_tolerance" value="0.2"/>
 
@@ -26,6 +24,9 @@
     <param name="initial_pose_x" value="0.0"/>
     <param name="initial_pose_y" value="0.0"/>
     <param name="initial_pose_a" value="0.0"/>
+    
+    <!-- Odometry model -->
+    <param name="odom_model_type" value="diff-corrected"/>
 
     <!-- Noise parameters, as defined in Probabilistic Robotics book -->
     <param name="odom_alpha1" value="0.04"/>
