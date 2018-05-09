@@ -1,13 +1,23 @@
 map_type: costmap
 
-obstacle_range: 0.0
-raytrace_range: 0.0
+# maximum range sensor reading that will put an obstacle into the map
+obstacle_range: 3.0
 
-transform_tolerance: 0.0
+# distance up to which robot will attempt to clear out front space
+raytrace_range: 5.0
 
-robot_radius: 0.0 
-inflation_radius: 0.0
+# maximum amount of latency allowed between frame transforms
+transform_tolerance: 0.4
+
+# footprint of the rectangular robot, in counterclockwise order
+footprint: [[0.2, 0.2], [-0.2, 0.2], [-0.2, -0.2], [0.2, -0.2]]
+
+# radius, for a circular robot
+# robot_radius: 0.0 
+
+# inflation radius of the costmap
+inflation_radius: 0.6
 
 observation_sources: laser_scan_sensor
 
-laser_scan_sensor: {sensor_frame: hokuyo, data_type: LaserScan, topic: /rover/laser/scan, marking: true, clearing: true}
+laser_scan_sensor: {sensor_frame: hokuyo, data_type: LaserScan, topic: /udacity_bot/laser/scan, marking: true, clearing: true}

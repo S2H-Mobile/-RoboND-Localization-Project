@@ -12,27 +12,39 @@
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
 
+    <!-- Filter -->
+    <!-- Transform tolerance. See common questions in classroom material. -->
+    <param name="transform_tolerance" value="0.2"/>
+
+    <!-- Number of particles. Defaults to minimum 100, maximum 5000. -->
+    <param name="min_particles" value="100"/>
+    <param name="max_particles" value="1000"/>
+    
+    <!-- Initial mean pose of the filter array. -->
+    <param name="initial_pose_x" value="0.0"/>
+    <param name="initial_pose_y" value="0.0"/>
+    <param name="initial_pose_a" value="0.0"/>
+    
     <!-- Odometry model -->
     <param name="odom_model_type" value="diff-corrected"/>
 
-    <!-- Transform tolerance. See question on Costmap2DROS transform timeout. -->
-    <param name="transform_tolerance" value="0.2"/>
-
-    <!-- Number of particles -->
-    <param name="min_particles" value="20"/>
-    <param name="max_particles" value="200"/>
-
     <!-- Noise parameters, as defined in Probabilistic Robotics book -->
-    <param name="odom_alpha1" value="0.04"/>
-    <param name="odom_alpha2" value="0.04"/>
-    <param name="odom_alpha3" value="0.02"/>
-    <param name="odom_alpha4" value="0.04"/>
+    <param name="odom_alpha1" value="0.05"/>
+    <param name="odom_alpha2" value="0.05"/>
+    <param name="odom_alpha3" value="0.01"/>
+    <param name="odom_alpha4" value="0.05"/>
 
     <!-- Laser model -->
     <param name="laser_model_type" value="likelihood_field"/>
 
-    <!-- Maximum distance for obstacle inflation in meters -->
+    <!-- Maximum distance for obstacle inflation. Defaults to 2.0 meters. -->
     <param name="laser_likelihood_max_dist" value="4.0"/>
+    
+    <!-- Mixture weight for the z_hit part of the model. -->
+    <param name="laser_z_hit" value="0.95"/>
+    
+    <!-- Mixture weight for the z_rand part of the model. -->
+    <param name="laser_z_rand" value="0.05"/>
   </node>
 
 <!-- Move base -->
