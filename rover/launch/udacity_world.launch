@@ -12,7 +12,7 @@
 
   <!-- launch the gazebo world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find rover)/worlds/udacity.world"/>
+    <arg name="world_name" value="$(find rover)/worlds/jackal_race.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>
@@ -25,5 +25,5 @@
 output="screen" args="-urdf -param robot_description -model rover"/>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/Rvizconfig.rviz" respawn="false"/>
 </launch>
