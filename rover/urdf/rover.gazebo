@@ -18,9 +18,20 @@
     </plugin>
   </gazebo>
 
+  <gazebo reference="chassis">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <gazebo reference="front_left_wheel">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="front_right_wheel">
+    <material>Gazebo/Orange</material>
+  </gazebo>
 
   <gazebo reference="camera">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/SkyBlue</material>
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -54,7 +65,6 @@
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
-    <material>Gazebo/Blue</material>
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>false</visualize>
