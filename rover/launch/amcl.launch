@@ -7,7 +7,7 @@
 
   <!-- Localization -->
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
-    <remap from="scan" to="udacity_bot/laser/scan"/>
+    <remap from="scan" to="rover/laser/scan"/>
     <param name="odom_frame_id" value="odom"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
