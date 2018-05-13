@@ -41,10 +41,10 @@
     <param name="laser_likelihood_max_dist" value="4.0"/>
     
     <!-- Mixture weight for the z_hit part of the model. -->
-    <param name="laser_z_hit" value="0.95"/>
+    <param name="laser_z_hit" value="0.8"/>
     
     <!-- Mixture weight for the z_rand part of the model. -->
-    <param name="laser_z_rand" value="0.05"/>
+    <param name="laser_z_rand" value="0.2"/>
   </node>
 
 <!-- Move base -->
