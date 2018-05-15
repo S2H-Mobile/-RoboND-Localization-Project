@@ -39,6 +39,6 @@ TrajectoryPlannerROS:
   meter_scoring: true
   
   # weights for scaling
-  pdist_scale: 0.8
+  pdist_scale: 1.8
   gdist_scale: 0.6
   occdist_scale: 0.01

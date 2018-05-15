@@ -29,10 +29,10 @@
     <param name="odom_model_type" value="diff-corrected"/>
 
     <!-- Noise parameters, as defined in Probabilistic Robotics book -->
-    <param name="odom_alpha1" value="0.05"/>
-    <param name="odom_alpha2" value="0.05"/>
-    <param name="odom_alpha3" value="0.01"/>
-    <param name="odom_alpha4" value="0.05"/>
+    <param name="odom_alpha1" value="0.02"/>
+    <param name="odom_alpha2" value="0.02"/>
+    <param name="odom_alpha3" value="0.005"/>
+    <param name="odom_alpha4" value="0.02"/>
 
     <!-- Laser model -->
     <param name="laser_model_type" value="likelihood_field"/>
@@ -41,10 +41,10 @@
     <param name="laser_likelihood_max_dist" value="4.0"/>
     
     <!-- Mixture weight for the z_hit part of the model. -->
-    <param name="laser_z_hit" value="0.8"/>
+    <param name="laser_z_hit" value="0.95"/>
     
     <!-- Mixture weight for the z_rand part of the model. -->
-    <param name="laser_z_rand" value="0.2"/>
+    <param name="laser_z_rand" value="0.05"/>
   </node>
 
 <!-- Move base -->
