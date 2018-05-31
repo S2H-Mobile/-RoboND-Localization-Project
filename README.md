@@ -8,27 +8,27 @@ This project runs on Ubuntu Linux with ROS Kinetic installed. Perform the follow
 - Setup a catkin workspace.
 - Clone the repository into the source folder of the catkin workspace.
 - Open a console and build the workspace with
-```
+``` bash
 $ catkin_make
 ```
 
 ## Usage
 1. Launch a console
-```
+``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch <rover, udacity_bot> udacity_world.launch
 ```
 
 2. Launch a console
-```
+``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch <rover, udacity_bot> amcl.launch
 ```
 
 3.  Launch a console
-```
+``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
 $ rosrun udacity_bot navigation_goal
