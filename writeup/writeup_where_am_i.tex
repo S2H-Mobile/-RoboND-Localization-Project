@@ -63,7 +63,7 @@ When expressed as a transition probability, \ref{eqn:motion_model} represents th
 P \left( y_t \vert x_t \right) \, .
 \end{equation} 
 
-Given a probability distribution for the current state, the control inputs, the measurements, the motion model, and the observation model, probabilistic algorithms calculate an estimate for the new state in a two step process. In the prediction step, the current state distribution is forward propagated using the controls and motion model. In the update step, this prediction is corrected by comparing it to the sensor output obtained using the observation model. This second step of the estimation process can be interpreted as a filter for the best guess estimate of the new state. 
+Probabilistic algorithms calculate an estimate for the new state in a two-step process, given a probability distribution for the current state, the control inputs, the measurements, the motion model, and the observation model. In the prediction step, the current state distribution is forward propagated using the controls and motion model. In the update step, this prediction is corrected by comparing it to the sensor output obtained using the observation model. This second step of the estimation process can be interpreted as a filter for the best guess estimate of the new state. 
 
 One specific probabilistic localization method is Bayesian filtering, where the state estimate is represented by the conditional probability distribution 
 \begin{equation}
