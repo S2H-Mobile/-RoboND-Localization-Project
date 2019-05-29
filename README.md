@@ -4,10 +4,18 @@ This is a solution of the *Where am I?* project as part of the Robotics Nanodegr
 The writeup report can be found [here](https://github.com/S2H-Mobile/RoboND-Localization-Project/blob/master/writeup/writeup_where_am_i.pdf).
 
 ## Setup
-This project runs on Ubuntu Linux with ROS Kinetic installed. Perform the following steps:
-- Setup a catkin workspace.
+This project runs on Ubuntu Linux with ROS Kinetic.
+- Install the ROS navigation stack:
+``` bash
+$ sudo apt-get install ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-map-server
+$ sudo apt-get install ros-kinetic-move-base
+$ rospack profile
+$ sudo apt-get install ros-kinetic-amcl
+```
+- Set up a catkin workspace.
 - Clone the repository into the source folder of the catkin workspace.
-- Open a console and build the workspace with
+- Make the workspace:
 ``` bash
 $ catkin_make
 ```
