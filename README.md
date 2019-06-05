@@ -21,25 +21,25 @@ $ catkin_make
 ```
 
 ## Usage
-1. Launch a console
+1. Launch the environment.
 ``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch <rover, udacity_bot> udacity_world.launch
 ```
+A Gazebo and a RViz simulation environment is launched.
 
-2. Launch a console
+2. Launch the AMCL node.
 ``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
 $ roslaunch <rover, udacity_bot> amcl.launch
 ```
 
-3.  Launch a console
+3.  Launch the navigation goal node.
 ``` bash
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
-$ rosrun udacity_bot navigation_goal
+$ rosrun <udacity_bot navigation_goal, rover rover_navigation_goal>
 ```
-
-A Gazebo and a RViz simulation launch and the selected mobile robot starts navigating towards the target location.
+The selected mobile robot starts navigating towards the target location.
