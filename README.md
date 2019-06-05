@@ -1,7 +1,7 @@
 # RoboND-Localization-Project
-This is a solution of the *Where am I?* project as part of the Robotics Nanodegree. The repository contains two ROS packages that describe the mobile robots ``udacity_bot`` and ``rover``. The ``map`` folder contains the 2D environment.
+This is a solution of the project *Where am I?* for the Robotics Nanodegree. The repository contains two ROS packages, ``udacity_bot`` and ``rover``. Each package defines a mobile robot and a navigation goal. The 2D environment maps are contained in the ``map`` folder.
 
-The writeup report can be found [here](https://github.com/S2H-Mobile/RoboND-Localization-Project/blob/master/writeup/writeup_where_am_i.pdf).
+In the [writeup report](https://github.com/S2H-Mobile/RoboND-Localization-Project/blob/master/writeup/writeup_where_am_i.pdf), several parameter tuning experiments are described.
 
 ## Setup
 This project runs on Ubuntu Linux with ROS Kinetic.
