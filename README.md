@@ -47,3 +47,12 @@ $ source devel/setup.bash
 $ rosrun <udacity_bot navigation_goal, rover rover_navigation_goal>
 ```
 The selected mobile robot starts navigating towards the target location.
+
+### Project Challenge
+Launch the ``drive_bot_node`` instead of the navigation goal node.
+``` bash
+$ cd ~/catkin_ws/
+$ source devel/setup.bash
+$ rosrun drive_bot drive_bot_node
+```
+The rover starts navigating towards the waypoints.
