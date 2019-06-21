@@ -34,14 +34,14 @@ int main(int argc, char **argv) {
 
   // Iterate over the waypoints
   const unsigned int size = sizeof(waypoints)/sizeof(waypoints[0]);
-  for(int i = 0; i < size; i++) {
-
-  // Wait for the action server to come up
-  ROS_INFO("Waiting for the move_base action server");
-  ac.waitForServer(ros::Duration(5));
-  ROS_INFO("Connected to move_base server");
+  for (int i = 0; i < size; i++) {
+    
+    // Wait for the action server to come up
+    ROS_INFO("Waiting for the move_base action server");
+    ac.waitForServer(ros::Duration(5));
+    ROS_INFO("Connected to move_base server");
     ROS_INFO("Sending waypoint %i.", i);
-
+    
     // Send move base goal and wait for result
     ac.sendGoal(waypoints[i]);
     ac.waitForResult();
