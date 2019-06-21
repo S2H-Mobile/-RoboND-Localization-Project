@@ -40,9 +40,9 @@ int main(int argc, char **argv) {
     ROS_INFO("Waiting for the move_base action server");
     ac.waitForServer(ros::Duration(5));
     ROS_INFO("Connected to move_base server");
-    ROS_INFO("Sending waypoint %i.", i);
     
     // Send move base goal and wait for result
+    ROS_INFO("Sending waypoint %i.", i);
     ac.sendGoal(waypoints[i]);
     ac.waitForResult();
 
